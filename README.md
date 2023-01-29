@@ -1,38 +1,106 @@
-# create-svelte
+<img src="/static/LezTionApp.png" alt="leztion api" width="1080" />
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# 🚀 Project Structure 🚀
 
-## Creating a project
+Application to organize your notes and daily tasks efficiently. With an intuitive and easy-to-use interface, this application will help you keep your notes and tasks organized and prioritized so you can achieve your goals and be more productive.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Requirements
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- [Deno](https://deno.land/#installation) (v1.29.0+)
+- [Pnpm](https://pnpm.io/installation) (v7.9.0+)
+- [Typescript](https://www.typescriptlang.org/download) (v4.9.0+)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## 🔌 `api` - contains the api code🔌
 
-## Developing
+[![Deno](https://img.shields.io/badge/Deno-fff?style=for-the-badge&logo=deno&logoColor=fff&labelColor=191919)]()
+[![TS](https://img.shields.io/badge/TypeScript-007acc?style=for-the-badge&logo=typescript&logoColor=007acc&labelColor=191919)]()
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+This API implements:
 
-```bash
-npm run dev
+- DDD (Domain-drive design)
+- TDD (Test-drive development)
+- Repository pattern.
+- Dependency injection.
+- Object-value pattern.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+#### 📂 [Repository](https://github.com/IamDavidev/LezTionApi)
 
-## Building
-
-To create a production version of your app:
+1. Clone the repo
 
 ```bash
-npm run build
+ gh repo clone IamDavidev/LezTionApi
 ```
 
-You can preview the production build with `npm run preview`.
+2. Run the api
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+deno task run::server
+```
+
+3. Run Tests
+
+```bash
+deno task run::tst
+```
+
+## 💡 `app` - contains the frontend code 💡
+
+[![TS](https://img.shields.io/badge/TypeScript-007acc?style=for-the-badge&logo=typescript&logoColor=007acc&labelColor=191919)]()
+[![Svelte](https://img.shields.io/badge/svelte-cc3200?style=for-the-badge&logo=svelte&logoColor=cc3200&labelColor=191919)]()
+
+#### 📂 [Repository](https://github.com/IamDavidev/LezTionApp)
+
+### Clone the repo
+
+1. Clone the repo
+
+```bash
+   gh repo clone IamDavidev/LezTionApp
+```
+
+2. Go to the project directory
+
+```bash
+    cd leztion
+```
+
+3. Install dependencies
+
+```bash
+    pnpm install
+```
+
+4. Start the server
+
+```bash
+    pnpm dev
+```
+
+## 🧾 `docs` - contains the documentation 🧾
+
+[![Svelte](https://img.shields.io/badge/svelte-cc3200?style=for-the-badge&logo=svelte&logoColor=cc3200&labelColor=191919)]()
+[![Astro](https://img.shields.io/badge/Astro-ff5d01?style=for-the-badge&logo=astro&logoColor=ff5d0100&labelColor=191919)]()
+
+📂 [Repository](https://github.com/IamDavidev/LezTionWeb)
+
+1. Clone the project
+
+```bash
+ gh repo clone IamDavidev/LezTionWeb
+```
+
+2. Install dependencies
+
+```bash
+pnpm install
+```
+
+3. run the project
+
+```bash
+pnpm run::dev
+```
+
+<div align="center">
+ This project is open source all code is public
+</div>
